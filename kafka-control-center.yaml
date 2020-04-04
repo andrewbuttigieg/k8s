@@ -13,7 +13,7 @@ spec:
         - name: control-center
           env:
           - name: CONTROL_CENTER_BOOTSTRAP_SERVERS
-            value: kafka1:9092
+            value: kafka1:29092
           - name: CONTROL_CENTER_ZOOKEEPER_CONNECT 
             value: zookeeper:2181 
           - name: CONTROL_CENTER_REPLICATION_FACTOR

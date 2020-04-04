@@ -6,8 +6,13 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - http:
+  - host: foo.bar.com
+    http:
       paths:
+        - path: /
+          backend:
+            serviceName: react-tic-tac-toe
+            servicePort: 80
         - path: /apple
           backend:
             serviceName: apple-service

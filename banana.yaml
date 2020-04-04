@@ -20,5 +20,6 @@ metadata:
 spec:
   selector:
     app: banana
+  type: NodePort
   ports:
-    - port: 5678 # Default port for image
+    - port: 5679 # Default port for image
